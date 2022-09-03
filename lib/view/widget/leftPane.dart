@@ -37,8 +37,8 @@ class _LeftPaneState extends ConsumerState<LeftPane> {
                             height: AppClass().getMqHeight(context) * 0.07,
                             child: InkWell(
                               onTap: () async {
-                                await launchUrl(
-                                    Uri.parse("https://github.com/jeeva-HBK"));
+                                await launchUrl(Uri.parse(
+                                    "https://github.com/ShawnMuktadir"));
                               },
                               onHover: (bol) {
                                 if (bol) {
@@ -63,7 +63,10 @@ class _LeftPaneState extends ConsumerState<LeftPane> {
                           Container(
                             height: AppClass().getMqHeight(context) * 0.07,
                             child: InkWell(
-                              onTap: () {},
+                              onTap: () async {
+                                await launchUrl(Uri.parse(
+                                    "https://www.instagram.com/shawn_muktadir/"));
+                              },
                               onHover: (bol) {
                                 if (bol) {
                                   ref.read(hoverProvider.notifier).state =
@@ -90,7 +93,7 @@ class _LeftPaneState extends ConsumerState<LeftPane> {
                             child: InkWell(
                               onTap: () async {
                                 await launchUrl(Uri.parse(
-                                    "https://www.linkedin.com/in/jeeva-hbk/"));
+                                    "https://www.linkedin.com/in/md-muktadir-14472a111/"));
                               },
                               onHover: (bol) {
                                 if (bol) {
@@ -116,7 +119,10 @@ class _LeftPaneState extends ConsumerState<LeftPane> {
                           Container(
                             height: AppClass().getMqHeight(context) * 0.07,
                             child: InkWell(
-                              onTap: () {},
+                              onTap: () async {
+                                await launchUrl(Uri.parse(
+                                    "https://twitter.com/muktadir03"));
+                              },
                               onHover: (bol) {
                                 if (bol) {
                                   ref.read(hoverProvider.notifier).state =
@@ -143,7 +149,7 @@ class _LeftPaneState extends ConsumerState<LeftPane> {
                             child: InkWell(
                               onTap: () async {
                                 await launchUrl(Uri.parse(
-                                    "https://stackoverflow.com/users/19705360/mr-jeeva"));
+                                    "https://stackoverflow.com/users/9095487/shawn-muktadir"));
                               },
                               onHover: (bol) {
                                 if (bol) {

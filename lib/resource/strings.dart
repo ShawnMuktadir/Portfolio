@@ -1,58 +1,60 @@
 class Strings {
   /* Intro screen contents */
   static final welcomeTxt = '''Hi, my name is''';
-  static final name = '''Jeevanandham.'''; // add . at the end
-  static final whatIdo =
-      '''I build things for the mobile/web.'''; // add . at the end
+  static final name = '''Md. Muktadir.'''; // add . at the end
+  static final whatIdo = '''Software Engineer '''; // add . at the end
   static final introAbout =
-      '''I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at ''';
-  static final currentOrgName = '''NetAccess.'''; // add . at the end
+      '''Diligent software engineer with 4+ years of experience in commercial application and software development. Currently, I’m working as a Programmer at ''';
+  static final currentOrgName = '''Fiber@Home Ltd.'''; // add . at the end
 
   /* About screen contents */
   static final aboutPara1 =
-      '''Hello! My name is Jeeva and I enjoy creating things that live on the internet. My interest in mobile/web development started back in 2019 when I decided to clone some applications — turns my passion into profession.''';
+      '''Hello! My name is Md. Muktadir and I enjoy learning technologies that sounds interesting to me. My interest in mobile/web development started back in 2016 when I decided to clone some applications — turns my passion into profession.''';
   static final aboutPara2 =
-      '''Fast-forward to today, and I’ve had the privilege of working for a good organization, a product-based, a huge corporation, and a student-led working atmosphere. My main focus these days is building accessible, inclusive products and digital experiences at Netaccess for a variety of clients.''';
+      '''Continuously solving various problems to enhance programming skill and analytic ability. Intend to pursue a challenging career and be a part of a progressive organization that gives scope to enhance my knowledge, skill and to reach the pinnacle in the computing and research field with sheer determination, dedication and hard work.''';
   static final aboutPara3 =
-      '''I also freelance for various clients across the world. If you've any ideas about creating a project or something, feel free to contact me!''';
+      '''Currently I am working as a full time programmer at Fiber@Home Ltd., where my responsibility lies to developing and designing mobile software programs for clients. Besides this, I have been working as a part time software engineer where I developed and designed an e-Commerce website and mobile-end application named Drobboo.''';
 
   static final techIntro =
       '''Here are a few technologies I’ve been working with recently:''';
-  static final tech1 = ''' Flutter'''; // space for manual padding
-  static final tech2 = ''' NodeJs'''; // space for manual padding
-  static final tech3 = ''' GraphQL'''; // space for manual padding
+  static final tech1 = ''' Android (Native)'''; // space for manual padding
+  static final tech2 = ''' Flutter'''; // space for manual padding
+  static final tech3 = ''' Firebase'''; // space for manual padding
   static final tech4 = ''' Swift'''; // space for manual padding
 
   /* Exp screen contents */
-  static final expCompName1 = '''Techno Kryon''';
-  static final expDesig1 = '''Android Developer''';
-  static final expDur1 = '''Nov 2019 - Mar 2020''';
+  static final expCompName3 = '''Fiber@Home Ltd.''';
+  static final expDesig3 = '''Programmer''';
+  static final expDur3 = '''March 2020 - Present''';
   static final expAbout1 =
-      '''sample test about the work statuary and atmosphere, qerjqwjqwiojeqwjeq ''';
+      '''Developing and designing mobile software programs for clients.''';
   static final expAbout1_2 =
-      '''sample test about the work statuary and atmosphere. asdhasjdhajhdajasbdjbasjkdasjkbldjkabsdjkablsdasdas''';
+      '''Participating in decision-making areas beyond programming such as product development.''';
   static final expAbout1_3 =
-      '''sample test about the work statuary and atmosphere, ''';
+      '''Working on bug fixing and improving application performance.''';
+  static final expAbout1_4 =
+      '''Developing using these languages, tools, and related technologies: Android (Native), Flutter.''';
 
-  static final expCompName2 = '''Rax-Tech''';
-  static final expDesig2 = '''Mobile App Developer''';
-  static final expDur2 = '''Aug 2020 - Jun 2022''';
+  static final expCompName2 = '''Ahsan Technologies Ltd.''';
+  static final expDesig2 = '''Software Engineer (part-time)''';
+  static final expDur2 = '''December 2020 - Present''';
   static final expAbout2 =
-      '''sample test about the work statuary and atmosphere, qerjqwjqwiojeqwjeq ''';
+      '''Developing and designing an e-Commerce website and mobile-end application name Drobboo.''';
   static final expAbout2_2 =
-      '''sample test about the work statuary and atmosphere. asdhasjdhajhdajasbdjbasjkdasjkbldjkabsdjkablsdasdas''';
+      '''Developing using these languages, tools, and related technologies: Flutter, ReactJs, HTML, CSS.''';
   static final expAbout2_3 =
-      '''sample test about the work statuary and atmosphere, ''';
+      '''Participating in making e-Commerce architecture such as single server architecture & multi-server architecture.''';
 
-  static final expCompName3 = '''Netaccess''';
-  static final expDesig3 = '''Software Engineer''';
-  static final expDur3 = '''Jun 2022 - Present''';
+
+  static final expCompName1 = '''Ponno.co Ltd.''';
+  static final expDesign1 = '''Android Developer''';
+  static final expDur1 = '''March 2018 - Feb 2020''';
   static final expAbout3 =
-      '''sample test about the work statuary and atmosphere, qerjqwjqwiojeqwjeq ''';
+      '''Designed and developed Android App that manages to track every business record up to date for businessman, including modules such as calculate due, payable, sell, purchase, and many more.''';
   static final expAbout3_2 =
-      '''sample test about the work statuary and atmosphere, qerjqwjqwiojeqwjeq ''';
+      '''Participated in decision-making areas beyond programming such as product development.''';
   static final expAbout3_3 =
-      '''sample test about the work statuary and atmosphere, qerjqwjqwiojeqwjeq ''';
+      '''Worked on bug fixing and improve application performance.''';
 
   /* Contact screen content */
   static final endTxt =

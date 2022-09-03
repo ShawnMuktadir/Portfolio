@@ -13,7 +13,8 @@ class AppTheme extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'PORTFOLIO',
+      title: 'Md. Muktadir',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
         primaryColor: AppColors().primaryColor,

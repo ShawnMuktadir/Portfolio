@@ -6,6 +6,7 @@ import 'package:scroll_to_index/scroll_to_index.dart';
 
 import 'introTab.dart';
 
+// ignore: must_be_immutable
 class IntroContent extends StatefulWidget {
   AutoScrollController aScrollController;
 

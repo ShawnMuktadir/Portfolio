@@ -99,7 +99,7 @@ class _ContactWebState extends State<ContactWeb> {
           Column(
             children: [
               Text(
-                '''Built & Developed by Jeevanandham''',
+                '''Built & Developed by Md. Muktadir''',
                 style: TextStyle(
                     color: AppColors().textColor,
                     fontSize: 12,
@@ -108,7 +108,7 @@ class _ContactWebState extends State<ContactWeb> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  '''ref - Britney C''',
+                  '''Software Engineer''',
                   style: TextStyle(
                       color: AppColors().neonColor,
                       fontSize: 12,

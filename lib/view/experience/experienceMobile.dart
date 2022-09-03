@@ -106,6 +106,33 @@ class _ExperienceMobileState extends State<ExperienceMobile> {
                   ],
                 ),
               ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 5.0),
+                      child: Icon(
+                        Icons.arrow_right,
+                        color: AppColors().neonColor,
+                        size: 20,
+                      ),
+                    ),
+                    Container(
+                      width: AppClass().getMqWidth(context) * 0.5,
+                      child: Text(
+                        Strings.expAbout1_4,
+                        style: TextStyle(
+                            color: AppColors().textLight,
+                            letterSpacing: 1,
+                            height: 1.5,
+                            fontSize: 13,
+                            fontFamily: 'sfmono'),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           )),
       ExperienceModel(
@@ -198,7 +225,7 @@ class _ExperienceMobileState extends State<ExperienceMobile> {
             ],
           )),
       ExperienceModel(
-          desig: Strings.expDesig1,
+          desig: Strings.expDesign1,
           compName: Strings.expCompName1,
           duration: Strings.expDur1,
           points: Column(
@@ -353,7 +380,7 @@ class _ExperienceMobileState extends State<ExperienceMobile> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Netaccess',
+                              'Fiber@Home Ltd.',
                               style: TextStyle(
                                   color: data == 0
                                       ? AppColors().neonColor
@@ -381,7 +408,7 @@ class _ExperienceMobileState extends State<ExperienceMobile> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Rax-Tech',
+                              'Ahsan Technologies Ltd.',
                               style: TextStyle(
                                   color: data == 1
                                       ? AppColors().neonColor
@@ -409,7 +436,7 @@ class _ExperienceMobileState extends State<ExperienceMobile> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Techno Kryon',
+                              'Ponno.co Ltd.',
                               style: TextStyle(
                                   color: data == 2
                                       ? AppColors().neonColor

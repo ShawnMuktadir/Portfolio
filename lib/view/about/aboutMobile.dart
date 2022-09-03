@@ -131,13 +131,15 @@ class _AboutMobileState extends State<AboutMobile> {
                             Row(
                               children: [
                                 Icon(Icons.arrow_right),
-                                Text(Strings.tech2,
-                                    style: GoogleFonts.robotoFlex(
-                                      color: AppColors().textLight,
-                                      letterSpacing: 1,
-                                      height: 1.5,
-                                      fontSize: 14,
-                                    )),
+                                Expanded(
+                                  child: Text(Strings.tech2,
+                                      style: GoogleFonts.robotoFlex(
+                                        color: AppColors().textLight,
+                                        letterSpacing: 1,
+                                        height: 1.5,
+                                        fontSize: 14,
+                                      )),
+                                ),
                               ],
                             ),
                             Row(
