@@ -326,7 +326,7 @@ class _ExperienceWebState extends State<ExperienceWeb> {
             children: [
               RichText(
                 text: TextSpan(
-                    text: "02.",
+                    text: "03.",
                     style: TextStyle(
                         color: AppColors().neonColor,
                         fontSize: 20,

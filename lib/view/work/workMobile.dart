@@ -23,7 +23,7 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
       children: [
         RichText(
           text: TextSpan(
-              text: "03.",
+              text: "04.",
               style: TextStyle(
                   color: AppColors().neonColor,
                   fontSize: 20,
@@ -88,29 +88,27 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
       onTap: () async {
         switch (index) {
           case 0:
-            await launchUrl(Uri.parse(AppClass.gitSafeC19));
+            await launchUrl(Uri.parse(AppClass.smartParkingURL));
             break;
 
           case 1:
-            AppClass().alertDialog(context, 'Not Found',
-                'Sorry the project you requested not found in the repository');
+            await launchUrl(Uri.parse(AppClass.drobbooAndroidURL));
             break;
 
           case 2:
-            await launchUrl(Uri.parse(AppClass.gitWtIot));
+            await launchUrl(Uri.parse(AppClass.tappConsumerURL));
             break;
 
           case 3:
-            await launchUrl(Uri.parse(AppClass.gitAutoStabilizer));
+            await launchUrl(Uri.parse(AppClass.ponnoURL));
             break;
 
           case 4:
-            await launchUrl(Uri.parse(AppClass.gitPAT));
+            await launchUrl(Uri.parse(AppClass.saveLifeURL));
             break;
 
           case 5:
-            AppClass().alertDialog(context, 'Not Found',
-                'Sorry the project you requested not found in the repository');
+            await launchUrl(Uri.parse(AppClass.demoWebsiteURL));
             break;
         }
       },

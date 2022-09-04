@@ -70,6 +70,29 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                                 )),
                           ),
                           PopupMenuItem(
+                            child: Container(
+                                width: 90.0,
+                                child: InkWell(
+                                  onTap: () => widget.controller.scrollToIndex(
+                                      1,
+                                      preferPosition: AutoScrollPosition.begin),
+                                  child: Row(
+                                    children: [
+                                      Icon(Icons.account_circle_rounded,
+                                          size: 18),
+                                      Padding(
+                                        padding:
+                                            const EdgeInsets.only(left: 10.0),
+                                        child: Text(
+                                          'Education',
+                                          style: GoogleFonts.roboto(),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                )),
+                          ),
+                          PopupMenuItem(
                             child: InkWell(
                               onTap: () => widget.controller.scrollToIndex(2,
                                   preferPosition: AutoScrollPosition.begin),
@@ -184,7 +207,7 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                       },
                       onHover: (bol) {
                         if (bol) {
-                          ref.read(hoverProvider.notifier).state = "expTitle";
+                          ref.read(hoverProvider.notifier).state = "educationTitle";
                         } else {
                           ref.read(hoverProvider.notifier).state = "";
                         }
@@ -194,6 +217,42 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                         child: Row(
                           children: [
                             Text("02. ",
+                                style: TextStyle(
+                                    color: AppColors().neonColor,
+                                    fontSize: 13,
+                                    fontFamily: 'sfmono')),
+                            Consumer(builder: (context, ref, child) {
+                              String state = ref.watch(hoverProvider);
+                              bool isHovered = (state == "aboutTitle");
+                              return Text("Education",
+                                  style: TextStyle(
+                                      color: isHovered
+                                          ? AppColors().neonColor
+                                          : AppColors().textColor,
+                                      fontSize: 13,
+                                      fontFamily: 'sfmono'));
+                            }),
+                          ],
+                        ),
+                      ),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        widget.controller.scrollToIndex(3,
+                            preferPosition: AutoScrollPosition.begin);
+                      },
+                      onHover: (bol) {
+                        if (bol) {
+                          ref.read(hoverProvider.notifier).state = "expTitle";
+                        } else {
+                          ref.read(hoverProvider.notifier).state = "";
+                        }
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 30.0),
+                        child: Row(
+                          children: [
+                            Text("03. ",
                                 style: TextStyle(
                                     color: AppColors().neonColor,
                                     fontSize: 13,
@@ -215,7 +274,7 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                     ),
                     InkWell(
                       onTap: () {
-                        widget.controller.scrollToIndex(3,
+                        widget.controller.scrollToIndex(4,
                             preferPosition: AutoScrollPosition.begin);
                       },
                       onHover: (bol) {
@@ -229,7 +288,7 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                         padding: const EdgeInsets.only(right: 30.0),
                         child: Row(
                           children: [
-                            Text("03. ",
+                            Text("04. ",
                                 style: TextStyle(
                                     color: AppColors().neonColor,
                                     fontSize: 13,
@@ -252,7 +311,7 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                     ),
                     InkWell(
                       onTap: () {
-                        widget.controller.scrollToIndex(4,
+                        widget.controller.scrollToIndex(5,
                             preferPosition: AutoScrollPosition.begin);
                       },
                       onHover: (bol) {
@@ -267,7 +326,7 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                         padding: const EdgeInsets.only(right: 30.0),
                         child: Row(
                           children: [
-                            Text("04.",
+                            Text("05.",
                                 style: TextStyle(
                                     color: AppColors().neonColor,
                                     fontSize: 13,

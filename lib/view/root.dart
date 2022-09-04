@@ -7,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/controller/generalController.dart';
 import 'package:portfolio/resource/appClass.dart';
 import 'package:portfolio/view/about/about.dart';
+import 'package:portfolio/view/education/education.dart';
 import 'package:portfolio/view/experience/experience.dart';
 import 'package:portfolio/view/intro/intro.dart';
 import 'package:portfolio/view/widget/appBar.dart';
@@ -87,16 +88,21 @@ class _RootScreenState extends ConsumerState<RootScreen> {
                                     key: ValueKey(2),
                                     controller: aScrollController,
                                     index: 2,
+                                    child: Education()),
+                                AutoScrollTag(
+                                    key: ValueKey(2),
+                                    controller: aScrollController,
+                                    index: 3,
                                     child: Experience()),
                                 AutoScrollTag(
                                     key: ValueKey(3),
                                     controller: aScrollController,
-                                    index: 3,
+                                    index: 4,
                                     child: Work()),
                                 AutoScrollTag(
                                     key: ValueKey(4),
                                     controller: aScrollController,
-                                    index: 4,
+                                    index: 5,
                                     child: Contact())
                               ],
                             )),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/model/educationModel.dart';
 import 'package:portfolio/resource/styles.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -15,54 +16,85 @@ class AppClass {
   static final resumeDownloadURL =
       '''https://jeeva-portfolio.s3.amazonaws.com/JEEVANANDHAM's+Resume.pdf''';
 
-  static final gitSafeC19 = '''https://github.com/jeeva-HBK/SafeC19''';
-
-  // static final gitHermarts = '''https://github.com/jeeva-HBK/SafeC19''';
-  static final gitWtIot = '''https://github.com/jeeva-HBK/AutoChem''';
-  static final gitAutoStabilizer =
-      '''https://github.com/jeeva-HBK/AutoStabilizer''';
-  static final gitPAT = '''https://github.com/jeeva-HBK/PAT''';
-
-  // static final gitAVM = '''https://github.com/jeeva-HBK/SafeC19''';
+  static final smartParkingURL =
+      '''https://play.google.com/store/apps/details?id=www.fiberathome.com.parkingapp''';
+  static final drobbooAndroidURL =
+      '''https://play.google.com/store/apps/details?id=com.drobboo''';
+  static final drobbooIOSURL =
+      '''https://apps.apple.com/us/app/drobboo/id1583770282''';
+  static final tappConsumerURL =
+      '''https://play.google.com/store/apps/details?id=org.tappwaterapp.consumer''';
+  static final tappProviderURL =
+      '''https://play.google.com/store/apps/details?id=org.tappwaterapp.provider''';
+  static final ponnoURL =
+      '''https://play.google.com/store/apps/details?id=ponno.app''';
+  static final saveLifeURL = '''https://github.com/ShawnMuktadir/SaveLife''';
+  static final demoWebsiteURL = '''https://shawnmuktadir.github.io/''';
 
   List<WorkModel> projectList = [
     WorkModel(
-        projectTitle: "SafeC19",
+        projectTitle: "DNCC Smart Parking",
         projectContent:
-            "It’s an Automatic Contactless Face Mask detection/Temperature detection/Hand Sanitizer app",
+            "Android App that manages drivers to book their vehicles at the predefined parking spot location on the google map. Show routes between driver current location and parking spot location as well as search google places and find out nearby parking slots comparing that searched location",
         tech1: "Android",
-        tech2: "Google ML",
+        tech2: "Firebase",
         tech3: "Java"),
     WorkModel(
-        projectTitle: "Hermarts",
-        projectContent: "E-Commerce Application for homemade Indian products",
-        tech1: "Android",
-        tech2: "RazorPay"),
-    WorkModel(
-        projectTitle: "WT-IoT",
+        projectTitle: "DROBBOO",
         projectContent:
-            '''It’s a water treatment process controller which can control all the sensors, calibration process, and staff management.''',
-        tech1: "Android",
-        tech2: "TCP",
-        tech3: "API"),
-    WorkModel(
-        projectTitle: "AutoStabilizer",
-        projectContent:
-            '''Client - SenseElec Remote controller mobile app for stabilizers and can be accessed locally(WiFi) and globally(MQTT).''',
-        tech1: "Android",
-        tech2: "MQTT"),
-    WorkModel(
-        projectTitle: "PAT",
-        projectContent:
-            '''PCB testing tool that helps QC/QA employees of rax-tech international, records the production flow and work strategy of every employee and automatically generates and stores some of the records as reports in the cloud.''',
+            "E-Commerce website and mobile-end application name Drobboo.",
         tech1: "Flutter",
-        tech2: "NodeJs"),
+        tech2: "Firebase",
+        tech3: "ReactJs"),
     WorkModel(
-        projectTitle: "AVM",
+        projectTitle: "Tapp Water App",
         projectContent:
-            '''It Acts as a display of a beverage vending machine that can perform several operations like Brewing, Dispensing, Cleaning drums, and several other operations.''',
+            '''Tapp-BDP is an app that assists the operation and maintenance of piped water supply systems in Bangladesh. Piped water supply consumers and water service providers both have their own app (Tapp- BDP Consumer or Tapp-BDP Service Provider) which communicates with each other and with a web application that is used to monitor the piped water supply from a distance.''',
         tech1: "Android",
-        tech2: "Tablet"),
+        tech2: "Java",
+        tech3: "Firebase"),
+    WorkModel(
+        projectTitle: "Ponno",
+        projectContent:
+            '''Android App that manages to track every business record up to date for businessmen. The Ponno app helps its users to understand all the ledgers easily.''',
+        tech1: "Android",
+        tech2: "Java",
+        tech3: "Kotlin"),
+    WorkModel(
+        projectTitle: "SaveLife",
+        projectContent:
+            '''Android App that manages blood donors list and organization list that organize & manage blood donors. Blood seekers can find specific blood group donors by filtering options and contacting them via phone call.''',
+        tech1: "Android",
+        tech2: "Java",
+        tech3: "Firebase"),
+    WorkModel(
+        projectTitle: "ShawnMuktadir.github.io",
+        projectContent:
+            '''A demo website using HTML5, CSS3, JavaScript, jQuery & Bootstrap''',
+        tech1: "HTML5",
+        tech2: "CSS3",
+        tech3: "JavaScript"),
+  ];
+
+  List<EducationModel> educationList = [
+    EducationModel(
+        educationTitle: "Bachelor of Science (B.Sc.)",
+        educationInstitution:
+            "Chittagong University of Engineering & Technology (CUET)",
+        educationPeriod:
+            "Computer Science & Engineering (2012 - 2017)",
+    educationImage: "assets/svg/cuet.png"),
+    EducationModel(
+        educationTitle: "Higher Secondary School Certificate (H.S.C)",
+        educationInstitution: "Dhaka City College (DCC)",
+        educationPeriod: "Group: Science (2009-2011)",
+        educationImage: "assets/svg/dcc.png"),
+    EducationModel(
+        educationTitle: "Secondary School Certificate (S.S.C)",
+        educationInstitution:
+            '''Dhanmondi Government Boys' High School (DGBHS)''',
+        educationPeriod: "Group: Science (Till 2009)",
+        educationImage: "assets/svg/dgbhs.jpg"),
   ];
 
   factory AppClass() {
